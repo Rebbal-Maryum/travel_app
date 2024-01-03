@@ -4,8 +4,9 @@ class AppColors {
   static const Color upperColor=Color(0xFF87CEFA);
   static const Color bottomColor=Color(0xFF0000FF);
   static const Color backgroundColor=Colors.transparent;
-  //static const Color bottomColor = Color(0x45A2CBFF);
-  // static const Color lightPrimaryColor = Color(0xff96BBFF);
+  static const Color onboardColor=Colors.black;
+  static const Color onboardSubColor = Colors.grey;
+  static const Color navigatorColor = Color(0xFF29B6F6);
   // static const Color secondaryBlueColor = Color(0xff5AC4F4);
   // static const Color hintTextColor = Color(0xffA0AABD);
   // static const Color textFieldColor = Color.fromARGB(255, 226, 232, 238);

@@ -5,7 +5,8 @@ const String SVGPATH = "assets/icons";
 
 class ImageAssets {
   static const String img1 = "$IMAGEPATH/owl.png";
-  // static const String img2 = "$IMAGEPATH/img2.png";
+  static const String img2 = "$IMAGEPATH/traveling.png";
+  static const String navigator = "$SVGPATH/arrow.png";
   // static const String img3 = "$IMAGEPATH/img3.png";
   // static const String img4 = "$IMAGEPATH/img4.png";
   // static const String img5 = "$IMAGEPATH/img5.png";

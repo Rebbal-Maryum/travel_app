@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/config/assets.dart';
 import 'package:travel_app/config/colors.dart';
+import 'package:travel_app/screens/boardingScreens/startScreen2.dart';
 
-import '../config/strings.dart';
-import '../config/styles.dart';
+import '../../config/strings.dart';
+import '../../config/styles.dart';
 class StartScreenOne extends StatefulWidget {
   const StartScreenOne({super.key});
 
@@ -51,12 +52,17 @@ children: [
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                ElevatedButton(onPressed: (){}, child: Image.asset(ImageAssets.navigator),
-                style: ButtonStyle(
-                  shape: MaterialStateProperty.all(CircleBorder()),
-                  padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-                  backgroundColor:MaterialStateProperty.all(AppColors.navigatorColor),
-                ),),
+                Padding(
+                  padding: EdgeInsets.only(top: 10,),
+                  child: ElevatedButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=>StartScreenTwo()));
+                  }, child: Image.asset(ImageAssets.navigator),
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all(CircleBorder()),
+                      padding: MaterialStateProperty.all(EdgeInsets.all(20)),
+                      backgroundColor:MaterialStateProperty.all(AppColors.navigatorColor),
+                    ),),
+                ),
                // AppColors.navigatorColor
               ],
             ),
@@ -67,3 +73,14 @@ children: [
     );
   }
 }
+//Padding(
+//padding: EdgeInsets.only(top: 10,),
+//child: ElevatedButton(onPressed: (){
+//Navigator.push(context, MaterialPageRoute(builder: (c)=>StartScreenTwo()));
+//}, child: Image.asset(ImageAssets.navigator),
+//style: ButtonStyle(
+//shape: MaterialStateProperty.all(CircleBorder()),
+//padding: MaterialStateProperty.all(EdgeInsets.all(20)),
+//backgroundColor:MaterialStateProperty.all(AppColors.navigatorColor),
+//),),
+//),

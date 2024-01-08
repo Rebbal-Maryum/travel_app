@@ -63,7 +63,9 @@ flutter:
   assets:
      - assets/images/owl.png
      - assets/images/traveling.png
-     - assets/icons/arrow.png
+     - assets/images/girl.png
+     - assets/images/beach.png
+     - assets/images/arrow.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

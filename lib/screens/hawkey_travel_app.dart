@@ -1,10 +1,10 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:travel_app/config/assets.dart';
 import 'package:travel_app/config/colors.dart';
-import 'package:travel_app/screens/loginScreen.dart';
-import 'package:travel_app/screens/startScreen1.dart';
+import 'package:travel_app/screens/boardingScreens/boardingScreen.dart';
+import 'package:travel_app/screens/frontScreen.dart';
+import 'package:travel_app/screens/boardingScreens/startScreen1.dart';
 class Hawkey_app extends StatefulWidget {
   const Hawkey_app({super.key});
 
@@ -17,7 +17,7 @@ class _Hawkey_appState extends State<Hawkey_app> {
   void initState(){
     super.initState();
     Timer(Duration(seconds:2), ()=>
-        Navigator.push(context, MaterialPageRoute(builder:(context)=>StartScreenOne())),);}
+        Navigator.push(context, MaterialPageRoute(builder:(context)=>OnBoardingScreen())),);}
     @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,7 +30,6 @@ class _Hawkey_appState extends State<Hawkey_app> {
                   end: Alignment.topCenter
               )
           ),
-
           child:Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

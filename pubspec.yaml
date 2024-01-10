@@ -66,6 +66,16 @@ flutter:
      - assets/images/girl.png
      - assets/images/beach.png
      - assets/images/arrow.png
+     - assets/images/search.png
+     - assets/images/sort.png
+     - assets/images/switzerland.png
+     - assets/images/star.png
+     - assets/images/westren.png
+     - assets/images/beacHouse.png
+     - assets/images/home.png
+     - assets/images/wallet.png
+     - assets/images/guide.png
+     - assets/images/chart.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -91,11 +101,13 @@ flutter:
         - asset: assets/fonts/Poppins-SemiBold.ttf
           style: normal
 
-    #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+    - family: Andika
+      fonts:
+        - asset: assets/fonts/Andika-Bold.ttf
+        - asset: assets/fonts/Andika-BoldItalic.ttf
+        - asset: assets/fonts/Andika-Italic.ttf
+        - asset: assets/fonts/Andika-Regular.ttf
+          style: normal
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

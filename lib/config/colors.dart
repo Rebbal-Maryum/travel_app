@@ -7,4 +7,6 @@ class AppColors {
   static const Color primaryColor=Color(0xFF000000);
   static const Color secondaryColor = Colors.grey;
   static const Color navigatorColor = Color(0xFF0373F3);
+  static const Color searchColor =Color(0xFFE9E9E9);
+  static const Color whitecolor =Color(0xFFFFFFFF);
 }

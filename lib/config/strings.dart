@@ -9,5 +9,20 @@ class AppStrings {
   //Front page
   static const String frontheading1='Find your next trip';
   static const String frontheading2='Nordic scenery';
-
+  static const String hintText ='Search...';
+  static const String mainheading ='Popular locations';
+  static const String placetitle1='Switzerland';
+  static const String placetitle2='Ilulissat Icefjord';
+  static const String subplacetitle1='from \$699                          4.9';
+  static const String subplacetitle2='from \$726                          5.0';
+  static const String placetitle3='Western Strait';
+  static const String placetitle4='  Beach House';
+  static const String placetitle5='Mountain range';
+  static const String subplacetitle3='  16 locations';
+  static const String subplacetitle4='  22 locations';
+  static const String subplacetitle5='  36 locations';
+  static const String bottomh1='Home';
+  static const String bottomh2='Wallet';
+  static const String bottomh3='Guide';
+  static const String bottomh4='Chart';
 }

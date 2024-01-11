@@ -59,4 +59,12 @@ const h8Light12White= TextStyle(
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w100,
 );
+//cottage
+const h9Light14White= TextStyle(
+  color: AppColors.searchColor,
+  fontSize: 14,
+  fontFamily: 'Poppins',
+  fontStyle: FontStyle.normal,
+  fontWeight: FontWeight.w100,
+);
 

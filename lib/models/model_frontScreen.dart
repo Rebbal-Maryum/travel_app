@@ -7,6 +7,7 @@ List<String> images=[
   ImageAssets.place1,
   ImageAssets.place1,
   ImageAssets.place1,
+
 ];
 List<String> headings=[
 AppStrings.placetitle1,

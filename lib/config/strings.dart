@@ -25,4 +25,9 @@ class AppStrings {
   static const String bottomh2='Wallet';
   static const String bottomh3='Guide';
   static const String bottomh4='Chart';
-}
+  static const String cottage='Nordic Cottage';
+  static const String cottagesub='Blue Lagoon Drive from Reykjavík, the capital\nof Iceland, to the southeast for about an hour,\nyou can reach Blue Lagoon, the famous';
+  static const String review='See reviews';
+  static const String button1='Enter the plan';
+  static const String button2='View other';
+      }

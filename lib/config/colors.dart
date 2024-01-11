@@ -9,4 +9,6 @@ class AppColors {
   static const Color navigatorColor = Color(0xFF0373F3);
   static const Color searchColor =Color(0xFFE9E9E9);
   static const Color whitecolor =Color(0xFFFFFFFF);
+  static const Color button1 =Color(0x1AFFFFFF);
+  static final Color attraction = Colors.white.withOpacity(0.8);
 }

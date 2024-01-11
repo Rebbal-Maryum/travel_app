@@ -60,7 +60,7 @@ class _FrontScreenState extends State<FrontScreen> {
                           style: ButtonStyle(
                             shape: MaterialStateProperty.all(CircleBorder()),
                             padding: MaterialStateProperty.all(
-                              EdgeInsets.all(27),
+                              EdgeInsets.all(23),
                             ),
                             backgroundColor: MaterialStateProperty.all(
                               AppColors.navigatorColor,

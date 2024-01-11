@@ -19,5 +19,6 @@ class ImageAssets {
   static const String bottom2= "$IMAGEPATH/wallet.png";
   static const String bottom3= "$IMAGEPATH/guide.png";
   static const String bottom4= "$IMAGEPATH/chart.png";
+  static const String background= "$IMAGEPATH/backgroundd.jpg";
 
 }

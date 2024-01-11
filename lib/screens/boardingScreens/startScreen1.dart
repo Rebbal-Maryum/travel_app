@@ -73,14 +73,3 @@ children: [
     );
   }
 }
-//Padding(
-//padding: EdgeInsets.only(top: 10,),
-//child: ElevatedButton(onPressed: (){
-//Navigator.push(context, MaterialPageRoute(builder: (c)=>StartScreenTwo()));
-//}, child: Image.asset(ImageAssets.navigator),
-//style: ButtonStyle(
-//shape: MaterialStateProperty.all(CircleBorder()),
-//padding: MaterialStateProperty.all(EdgeInsets.all(20)),
-//backgroundColor:MaterialStateProperty.all(AppColors.navigatorColor),
-//),),
-//),

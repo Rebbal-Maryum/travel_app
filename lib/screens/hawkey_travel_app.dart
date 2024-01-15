@@ -17,7 +17,13 @@ class _Hawkey_appState extends State<Hawkey_app> {
   void initState(){
     super.initState();
     Timer(Duration(seconds:2), ()=>
-        Navigator.push(context, MaterialPageRoute(builder:(context)=>OnBoardingScreen())),);}
+        Navigator.pushAndRemoveUntil(
+          context,
+          MaterialPageRoute(builder: (context) => OnBoardingScreen()),
+              (Route<dynamic> route) => false,
+        ),
+
+      );}
     @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -4,6 +4,7 @@ import 'package:travel_app/config/strings.dart';
 import 'package:travel_app/config/styles.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:travel_app/screens/frontScreen.dart';
+import 'package:travel_app/screens/mapScreen.dart';
 import '../config/assets.dart';
 import 'package:five_pointed_star/five_pointed_star.dart';
 class AttractionDetails extends StatefulWidget {
@@ -102,7 +103,7 @@ class _AttractionDetailsState extends State<AttractionDetails> {
             child: Row(
           children: [
             ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (c)=>FrontScreen()));
+              Navigator.push(context, MaterialPageRoute(builder: (c)=>MapScreen()));
             }, child: Text(AppStrings.button1,style:h8Light12White.copyWith(fontSize: 14,
             fontWeight: FontWeight.normal),),
               style: ButtonStyle(

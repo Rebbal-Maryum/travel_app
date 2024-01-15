@@ -1,5 +1,8 @@
 
 
+import 'package:flutter/cupertino.dart';
+import 'package:google_maps_flutter/google_maps_flutter.dart';
+
 const String IMAGEPATH = "assets/images";
 const String SVGPATH = "assets/icons";
 
@@ -20,5 +23,4 @@ class ImageAssets {
   static const String bottom3= "$IMAGEPATH/guide.png";
   static const String bottom4= "$IMAGEPATH/chart.png";
   static const String background= "$IMAGEPATH/backgroundd.jpg";
-
 }

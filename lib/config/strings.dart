@@ -30,4 +30,5 @@ class AppStrings {
   static const String review='See reviews';
   static const String button1='Enter the plan';
   static const String button2='View other';
+  static const String mapTitle='Location targeting';
       }

@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:travel_app/config/colors.dart';
 import 'package:travel_app/config/strings.dart';
 import 'package:travel_app/config/styles.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:travel_app/screens/frontScreen.dart';
+import 'package:travel_app/screens/itineraryScreens/itineraryPage.dart';
 import 'package:travel_app/screens/mapScreen.dart';
 import '../config/assets.dart';
 import 'package:five_pointed_star/five_pointed_star.dart';
+
+import '../controller/controller_attractionScreen.dart';
 class AttractionDetails extends StatefulWidget {
   const AttractionDetails({super.key});
 
@@ -16,6 +21,8 @@ class AttractionDetails extends StatefulWidget {
 
 class _AttractionDetailsState extends State<AttractionDetails> {
   double rating=5;
+  final AttractionDetailsController attractionDetailsController =
+  Get.find<AttractionDetailsController>();
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,7 +32,7 @@ class _AttractionDetailsState extends State<AttractionDetails> {
         Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-      image: AssetImage(ImageAssets.background),
+      image: AssetImage(attractionDetailsController.selectedImage.value),
       fit: BoxFit.cover,
           ),
         ),
@@ -43,7 +50,9 @@ class _AttractionDetailsState extends State<AttractionDetails> {
         Positioned(
             bottom: 220,
             left: 20,
-      child: Text(AppStrings.cottage,style: h7Light22White.copyWith(fontSize: 42,),)
+      // child: Text(AppStrings.cottage,style: h7Light22White.copyWith(fontSize: 42,),
+            child: Text(attractionDetailsController.selectedHeading.value,
+              style: h7Light22White.copyWith(fontSize: 42),)
         ),
         Positioned(
             bottom: 155,
@@ -103,7 +112,7 @@ class _AttractionDetailsState extends State<AttractionDetails> {
             child: Row(
           children: [
             ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (c)=>MapScreen()));
+             Navigator.push(context, MaterialPageRoute(builder: (c)=>ItineraryScreen()));
             }, child: Text(AppStrings.button1,style:h8Light12White.copyWith(fontSize: 14,
             fontWeight: FontWeight.normal),),
               style: ButtonStyle(
@@ -113,7 +122,7 @@ class _AttractionDetailsState extends State<AttractionDetails> {
               ),),
             SizedBox(width: 20,),
             ElevatedButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (c)=>FrontScreen()));
+              Navigator.push(context, MaterialPageRoute(builder: (c)=>MapScreen()));
             }, child: Text(AppStrings.button2,style:h4Bold26Black.copyWith(fontSize: 14)),
               style: ButtonStyle(
                 padding: MaterialStateProperty.all(EdgeInsets.only(top: 15,bottom: 15,

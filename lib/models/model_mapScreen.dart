@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+import '../config/assets.dart';
+import '../config/strings.dart';
+
 class MapData {
   late BitmapDescriptor customIcon;
   MapData() {
@@ -49,4 +52,20 @@ class MapData {
       ),
     ];
   }
+  List<String> imagesmap=[
+    ImageAssets.map,
+    ImageAssets.map,
+  ];
+  List<String> headingsmap=[
+    AppStrings.mapData1,
+    AppStrings.mapData2,
+  ];
+  List<String> pricedetail=[
+    AppStrings.greyy,
+    AppStrings.greyy,
+  ];
+  List<String> subheadings=[
+    AppStrings.locationprice1,
+    AppStrings.locationprice2,
+  ];
 }

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:travel_app/config/colors.dart';
 import 'package:travel_app/config/strings.dart';
 import 'package:travel_app/config/styles.dart';
@@ -6,6 +8,7 @@ import 'package:travel_app/models/model_frontScreen.dart';
 import 'package:travel_app/screens/attractionDetail.dart';
 import 'package:travel_app/screens/boardingScreens/startScreen1.dart';
 import '../config/assets.dart';
+import '../controller/controller_attractionScreen.dart';
 
 class FrontScreen extends StatefulWidget {
   const FrontScreen({super.key});
@@ -16,6 +19,8 @@ class FrontScreen extends StatefulWidget {
 
 class _FrontScreenState extends State<FrontScreen> {
   int myindex=0;
+  final AttractionDetailsController attractionDetailsController =
+  Get.put(AttractionDetailsController());
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -84,6 +89,10 @@ class _FrontScreenState extends State<FrontScreen> {
                       itemBuilder: (BuildContext context, int index) {
                         return GestureDetector(
                           onTap: () {
+                            attractionDetailsController.setSelectedDetails(
+                              images[index],
+                              headings[index],
+                            );
                             Navigator.push(
                               context,
                               MaterialPageRoute(
@@ -139,14 +148,27 @@ class _FrontScreenState extends State<FrontScreen> {
                       itemCount: images1.length,
                       itemBuilder: (BuildContext context, int index) {
                         return GestureDetector(
-                          onTap: () {
+                          onTap: ()
+                          {
+                            attractionDetailsController.setSelectedDetails(
+                              images1[index],
+                              headings1[index],
+                            );
                             Navigator.push(
                               context,
                               MaterialPageRoute(
                                 builder: (context) => AttractionDetails(),
                               ),
                             );
-                            },
+                          },
+                          // {
+                          //   Navigator.push(
+                          //     context,
+                          //     MaterialPageRoute(
+                          //       builder: (context) => AttractionDetails(),
+                          //     ),
+                          //   );
+                          //   },
                           child: Stack(
                             children: [
                               Container(

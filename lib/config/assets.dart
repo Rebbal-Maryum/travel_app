@@ -23,4 +23,17 @@ class ImageAssets {
   static const String bottom3= "$IMAGEPATH/guide.png";
   static const String bottom4= "$IMAGEPATH/chart.png";
   static const String background= "$IMAGEPATH/backgroundd.jpg";
+  static const String map= "$IMAGEPATH/sunset.png";
+  static const String like= "$IMAGEPATH/heart.png";
+  static const String circle1= "$IMAGEPATH/circular.png";
+  static const String customized= "$IMAGEPATH/pic.png";
+  static const String location= "$IMAGEPATH/location.png";
+  static const String pic1= "$IMAGEPATH/pic1.png";
+  static const String pic2= "$IMAGEPATH/pic2.png";
+  static const String pic3= "$IMAGEPATH/pic3.png";
+  static const String schedule1= "$IMAGEPATH/s1.png";
+  static const String schedule2= "$IMAGEPATH/s2.png";
+  static const String schedule3= "$IMAGEPATH/s3.png";
+  static const String schedule4= "$IMAGEPATH/s4.png";
+  static const String qr= "$IMAGEPATH/qr.png";
 }

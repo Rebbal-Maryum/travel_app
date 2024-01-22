@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import '../config/assets.dart';
-import '../config/colors.dart';
-import '../config/strings.dart';
-import '../config/styles.dart';
-import '../models/model_frontScreen.dart';
-import '../models/model_mapScreen.dart';
-import 'attractionDetail.dart';
+import '../../config/assets.dart';
+import '../../config/colors.dart';
+import '../../config/strings.dart';
+import '../../config/styles.dart';
+import '../../models/model_frontScreen.dart';
+import '../../models/model_mapScreen.dart';
+import '../attractionScreens/attractionDetail.dart';
 
 
 class MapScreen extends StatefulWidget {
@@ -190,7 +190,7 @@ class _MapScreenState extends State<MapScreen> {
                                         ),
                                         SizedBox(height: 10,),
                                         Text(mapData.pricedetail[index],
-                                          style:h5Light16Grey.copyWith(fontSize: 14) ,),
+                                          style:h5Light16Grey.copyWith(fontSize: 14,color:AppColors.light) ,),
                                         Row(
                                           children: [
                                             Text(mapData.subheadings[index],

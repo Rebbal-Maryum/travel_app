@@ -96,7 +96,7 @@ Widget buildEndContent1() {
               ),
               TextSpan(
                 text: (AppStrings.schedulesub1),
-                style: h5Light16Grey.copyWith(fontSize: 14)
+                style: h5Light16Grey.copyWith(fontSize: 14,color: AppColors.light)
               )
             ],
           ),
@@ -128,7 +128,7 @@ Widget buildEndContent2() {
                 ),
                 TextSpan(
                     text: (AppStrings.schedulesub2),
-                    style: h5Light16Grey.copyWith(fontSize: 14)
+                    style: h5Light16Grey.copyWith(fontSize: 14,color:AppColors.light)
                 )
               ],
             ),
@@ -160,7 +160,7 @@ Widget buildEndContent3() {
                 ),
                 TextSpan(
                     text: (AppStrings.schedulesub3),
-                    style: h5Light16Grey.copyWith(fontSize: 14)
+                    style: h5Light16Grey.copyWith(fontSize: 14,color:AppColors.light)
                 )
               ],
             ),
@@ -192,7 +192,7 @@ Widget buildEndContent4() {
                 ),
                 TextSpan(
                     text: (AppStrings.schedulesub4),
-                    style: h5Light16Grey.copyWith(fontSize: 14)
+                    style: h5Light16Grey.copyWith(fontSize: 14,color:AppColors.light)
                 )
               ],
             ),

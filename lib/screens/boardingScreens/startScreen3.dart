@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/config/assets.dart';
 import 'package:travel_app/config/colors.dart';
-import 'package:travel_app/screens/frontScreen.dart';
+import 'package:travel_app/screens/introductionScreen/frontScreen.dart';
 
 import '../../config/strings.dart';
 import '../../config/styles.dart';

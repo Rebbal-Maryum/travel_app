@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:travel_app/config/strings.dart';
 import 'package:travel_app/config/styles.dart';
-import 'package:travel_app/screens/guidePage.dart';
+import 'package:travel_app/screens/attractionScreens/guidePage.dart';
 
 import '../../Config/Colors.dart';
 import '../../Config/assets.dart';
@@ -77,14 +77,14 @@ home: Scaffold(
                     ),
                   ),
                   side: MaterialStateProperty.all(BorderSide(
-                    color: AppColors.secondaryColor, // Set the border color here
-                    width: 1.0, // Set the border width here
+                    color:AppColors.light, // Set the border color here
+                    width: 0.5, // Set the border width here
                   )),
                   padding: MaterialStateProperty.all(EdgeInsets.only(top: 10,bottom: 10,
                       left: 30,right: 30)), // Set the padding here
                 ),
-                child:Text(AppStrings.beach,style:h4Bold26Black.copyWith(fontSize: 16,color:
-      AppColors.secondaryColor,fontWeight: FontWeight.w500)),
+                child:Text(AppStrings.beach,style:h4Bold26Black.copyWith
+                  (fontSize: 16,color:AppColors.light,fontWeight: FontWeight.w500)),
               ),
               SizedBox(
                 width: 10,
@@ -98,14 +98,14 @@ home: Scaffold(
                     ),
                   ),
                   side: MaterialStateProperty.all(BorderSide(
-                    color: AppColors.secondaryColor, // Set the border color here
-                    width: 1.0, // Set the border width here
+                    color:AppColors.light, // Set the border color here
+                    width: 0.5, // Set the border width here
                   )),
                   padding: MaterialStateProperty.all(EdgeInsets.only(top: 10,bottom: 10,
                       left: 30,right: 30)), // Set the padding here
                 ),
-                child:Text(AppStrings.resort,style:h4Bold26Black.copyWith(fontSize: 16,color:
-                AppColors.secondaryColor,fontWeight: FontWeight.w500)),
+                child:Text(AppStrings.resort,style:h4Bold26Black.copyWith
+                  (fontSize: 16,color:AppColors.light,fontWeight: FontWeight.w500)),
               ),
             ],
           ),
@@ -134,7 +134,7 @@ home: Scaffold(
                             ),
                             TextSpan(
                               text:('\nJuly $day'),
-                              style: h5Light16Grey,
+                              style: h5Light16Grey.copyWith(color:AppColors.light),
                             )
                           ],
                         ),
@@ -185,7 +185,7 @@ home: Scaffold(
               ),
             ),
           ),
-          ElevatedButton(onPressed: (){}, child: Text(AppStrings.itinerary,style:h4Bold26Black.copyWith(fontSize: 16,color:
+          ElevatedButton(onPressed: (){}, child: Text(AppStrings.save,style:h4Bold26Black.copyWith(fontSize: 16,color:
           AppColors.whitecolor,fontWeight: FontWeight.w500)),
             style: ButtonStyle(
               padding: MaterialStateProperty.all(EdgeInsets.only(top: 15,bottom: 15,
@@ -201,7 +201,7 @@ home: Scaffold(
   ),
   bottomNavigationBar: BottomNavigationBar(
     selectedItemColor: AppColors.navigatorColor,
-    unselectedItemColor: AppColors.secondaryColor,
+    unselectedItemColor: AppColors.light,
     type: BottomNavigationBarType.fixed,
     onTap: (index) {
       setState(() {

@@ -11,6 +11,8 @@ class AppColors {
   static const Color whitecolor =Color(0xFFFFFFFF);
   static const Color button1 =Color(0x1AFFFFFF);
   static final Color attraction = Colors.white.withOpacity(0.8);
-  static final Color light =Color(0xB1B1B1);
+  static final Color light =Color(0xFFB1B1B1);
+  static final Color facebook =Color(0xFF3B5896);
+
 
 }

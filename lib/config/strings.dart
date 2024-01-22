@@ -64,4 +64,28 @@ class AppStrings {
   static const String july15=' July 15';
   static const String july16=' July 16';
   static const String itinerary='View specific itinerary';
-      }
+  static const String bail='About Bail';
+  static const String baildes='Blue Lagoon Drive from Reykjavík, the capital\nof Iceland, to the southeast for about an\nhouryou can reach Blue Lagoon, the famous';
+  static const String pricing='Pricing';
+  static const String flight='Flights';
+  static const String hotel='Hotels';
+  static const String from1= '\nfrom \$199';
+  static const String from2= '\nfrom \$199/ night';
+  static const String plan='Plan trip';
+  static const String alan='Alan love';
+  static const String email='E-mail address';
+  static const String pass='Password';
+  static const String auth='Authenticate';
+  static const String change='Change';
+  static const String save='Save Settings';
+  static const String signin='Sign in';
+  static const String continuing='Or continue with';
+  static const String apple='Continue with Apple';
+  static const String facebook='Continue with Facebook';
+  static const String cont='Continue';
+  static const String signup='Sign up free';
+  static const String read='I have read the';
+  static const String terms=' Terms of Service';
+
+
+}

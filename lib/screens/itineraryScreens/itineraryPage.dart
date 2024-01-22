@@ -137,7 +137,7 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
         ),
           bottomNavigationBar: BottomNavigationBar(
             selectedItemColor:AppColors.navigatorColor,
-            unselectedItemColor:AppColors.secondaryColor,
+            unselectedItemColor:AppColors.light,
             type: BottomNavigationBarType.fixed,
             onTap: (index){
               setState(() {

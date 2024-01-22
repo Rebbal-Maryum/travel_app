@@ -5,10 +5,10 @@ import 'package:travel_app/config/colors.dart';
 import 'package:travel_app/config/strings.dart';
 import 'package:travel_app/config/styles.dart';
 import 'package:travel_app/models/model_frontScreen.dart';
-import 'package:travel_app/screens/attractionDetail.dart';
+import 'package:travel_app/screens/attractionScreens/attractionDetail.dart';
 import 'package:travel_app/screens/boardingScreens/startScreen1.dart';
-import '../config/assets.dart';
-import '../controller/controller_attractionScreen.dart';
+import '../../config/assets.dart';
+import '../../controller/controller_attractionScreen.dart';
 
 class FrontScreen extends StatefulWidget {
   const FrontScreen({super.key});

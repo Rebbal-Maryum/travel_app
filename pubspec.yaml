@@ -101,6 +101,15 @@ flutter:
      - assets/images/s3.png
      - assets/images/s4.png
      - assets/images/qr.png
+     - assets/images/flight.png
+     - assets/images/forward.png
+     - assets/images/motel.png
+     -  assets/images/mail.png
+     -  assets/images/pass.png
+     -  assets/images/person.png
+     - assets/images/apple.png
+     - assets/images/facebook.png
+     -  assets/images/moreCircle.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

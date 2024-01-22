@@ -36,4 +36,13 @@ class ImageAssets {
   static const String schedule3= "$IMAGEPATH/s3.png";
   static const String schedule4= "$IMAGEPATH/s4.png";
   static const String qr= "$IMAGEPATH/qr.png";
+  static const String arrow= "$IMAGEPATH/forward.png";
+  static const String hotel= "$IMAGEPATH/motel.png";
+  static const String flight= "$IMAGEPATH/flight.png";
+  static const String email= "$IMAGEPATH/mail.png";
+  static const String pasword= "$IMAGEPATH/pass.png";
+  static const String person= "$IMAGEPATH/person.png";
+  static const String apple= "$IMAGEPATH/apple.png";
+  static const String facebook= "$IMAGEPATH/facebook.png";
+  static const String circular= "$IMAGEPATH/moreCircle.png";
 }

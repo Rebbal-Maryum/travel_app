@@ -5,13 +5,13 @@ import 'package:travel_app/config/colors.dart';
 import 'package:travel_app/config/strings.dart';
 import 'package:travel_app/config/styles.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:travel_app/screens/frontScreen.dart';
+import 'package:travel_app/screens/introductionScreen/frontScreen.dart';
 import 'package:travel_app/screens/itineraryScreens/itineraryPage.dart';
-import 'package:travel_app/screens/mapScreen.dart';
-import '../config/assets.dart';
+import 'package:travel_app/screens/mapScreens/mapScreen.dart';
+import '../../config/assets.dart';
 import 'package:five_pointed_star/five_pointed_star.dart';
 
-import '../controller/controller_attractionScreen.dart';
+import '../../controller/controller_attractionScreen.dart';
 class AttractionDetails extends StatefulWidget {
   const AttractionDetails({super.key});
 

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:travel_app/config/colors.dart';
@@ -18,17 +19,18 @@ class FrontScreen extends StatefulWidget {
 }
 
 class _FrontScreenState extends State<FrontScreen> {
-  int myindex=0;
   final AttractionDetailsController attractionDetailsController =
   Get.put(AttractionDetailsController());
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         body: ListView(
           children: [
             Padding(
-              padding: EdgeInsets.only(top: 60, left: 20),
+              padding: EdgeInsets.only(
+                top: MediaQuery.of(context).size.height * 0.09,
+                left: MediaQuery.of(context).size.width * 0.05,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -52,26 +54,35 @@ class _FrontScreenState extends State<FrontScreen> {
                                 color: AppColors.searchColor,
                               ),
                             ),
+                            focusedBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(50),
+                              borderSide: BorderSide(
+                                color: AppColors.primaryColor,
+                                width: 0.5,
+                              ),
+                            ),
                           ),
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.only(left: 20, right: 20),
+                        margin: EdgeInsets.only(left: (MediaQuery.of(context).size.width * 0.03),
+                            right: (MediaQuery.of(context).size.width * 0.03)),
                         child: ElevatedButton(
                           onPressed: () {
-                            // Navigator.push(context, MaterialPageRoute(builder: (c)=>StartScreenTwo()));
+                            // Your onPressed logic here
                           },
-                          child: Image.asset(ImageAssets.sortimg),
+                          child:SvgPicture.asset(SvgAssets.sortout),
                           style: ButtonStyle(
                             shape: MaterialStateProperty.all(CircleBorder()),
                             padding: MaterialStateProperty.all(
-                              EdgeInsets.all(23),
+                              EdgeInsets.all(MediaQuery.of(context).size.width * 0.05), // Adjust padding as needed
                             ),
                             backgroundColor: MaterialStateProperty.all(
                               AppColors.navigatorColor,
                             ),
                           ),
-                        ),
+                        )
+
                       ),
                     ],
                   ),
@@ -135,7 +146,6 @@ class _FrontScreenState extends State<FrontScreen> {
                       },
                     ),
                   ),
-                  //SizedBox(height: 5),
                   Text(
                     AppStrings.mainheading,
                     style: h6Bold20Black,
@@ -205,33 +215,9 @@ class _FrontScreenState extends State<FrontScreen> {
             ),
           ],
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor:AppColors.navigatorColor,
-          unselectedItemColor:AppColors.secondaryColor,
-          type: BottomNavigationBarType.fixed,
-         onTap: (index){
-           setState(() {
-             myindex=index;
-           });
-           },
-          currentIndex: myindex,
-          items:const [
-          BottomNavigationBarItem(icon:ImageIcon(AssetImage(ImageAssets.bottom1),
-          ),
-              label:AppStrings.bottomh1),
-          BottomNavigationBarItem(icon:ImageIcon(AssetImage(ImageAssets.bottom2),
-          ),
-              label: AppStrings.bottomh2),
-          BottomNavigationBarItem(icon: ImageIcon(AssetImage(ImageAssets.bottom3),
-          ),
-              label: AppStrings.bottomh3),
-          BottomNavigationBarItem(icon: ImageIcon(AssetImage(ImageAssets.bottom4),
-          ),
-              label: AppStrings.bottomh4,),
-        ],)
-      ),
+      );
 
-    );
+
   }
 }
 

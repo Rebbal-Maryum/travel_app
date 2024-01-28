@@ -60,7 +60,9 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
                         ],
                       ),
                     ),
-                    SizedBox(width: 145), // Adjust the spacing between text and image
+                   SizedBox(
+                     width:MediaQuery.of(context).size.width* 0.29 ,
+                   ),
                     Image.asset(
                       ImageAssets.circle1,
                     ),
@@ -135,30 +137,6 @@ class _ItineraryScreenState extends State<ItineraryScreen> {
             ),
           ),
         ),
-          bottomNavigationBar: BottomNavigationBar(
-            selectedItemColor:AppColors.navigatorColor,
-            unselectedItemColor:AppColors.light,
-            type: BottomNavigationBarType.fixed,
-            onTap: (index){
-              setState(() {
-                myindex=index;
-              });
-            },
-            currentIndex: myindex,
-            items:const [
-              BottomNavigationBarItem(icon:ImageIcon(AssetImage(ImageAssets.bottom1),
-              ),
-                  label:AppStrings.bottomh1),
-              BottomNavigationBarItem(icon:ImageIcon(AssetImage(ImageAssets.bottom2),
-              ),
-                  label: AppStrings.bottomh2),
-              BottomNavigationBarItem(icon: ImageIcon(AssetImage(ImageAssets.bottom3),
-              ),
-                  label: AppStrings.bottomh3),
-              BottomNavigationBarItem(icon: ImageIcon(AssetImage(ImageAssets.bottom4),
-              ),
-                label: AppStrings.bottomh4,),
-            ],)
       ),
 
     );

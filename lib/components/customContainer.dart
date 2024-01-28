@@ -43,34 +43,28 @@ class _ContainerWithPageViewState extends State<ContainerWithPageView> {
           ],
         ),
         Positioned(
-          top: 20,
+          top: 10,
           left: 10,
           child: Row(
             children: [
-              Image.asset(ImageAssets.location),
+              Icon(Icons.location_on,
+              color: AppColors.light,),
+              // Image.asset(ImageAssets.location),
               SizedBox(width: 3,),
               Text(AppStrings.stacked, style: h5Light16Grey.copyWith(fontSize: 12),),
-              SizedBox(width: 170,),
+              SizedBox(width: MediaQuery.of(context).size.width * 0.08,),
               Container(
                 // height: 200,
                 width: 300,
-                child: Stack(
-                  children: [
-                    Image.asset(ImageAssets.pic1),
-                    Positioned(
-                        left: 15,
-                        child: Image.asset(ImageAssets.pic2)),
-                    Positioned(
-                        left:30,
-                        child: Image.asset(ImageAssets.pic3)),
-                  ],
-                ),
+                child:Image.asset(ImageAssets.newpic,
+                height: 40,
+                width: 60,),
               )
             ],
           )
         ),
-        Positioned( right: 55,
-          bottom: 70,
+        Positioned( right: MediaQuery.of(context).size.width * 0.1,
+          bottom: MediaQuery.of(context).size.height * 0.1,
 
           child:  ElevatedButton(onPressed: (){
           Navigator.push(context, MaterialPageRoute(builder: (c)=>ItineraryForm()));

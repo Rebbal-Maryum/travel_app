@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 import 'package:travel_app/Config/Colors.dart';
-import 'package:travel_app/components/eventCard1.dart';
 import 'package:travel_app/config/strings.dart';
 import 'package:travel_app/config/styles.dart';
 

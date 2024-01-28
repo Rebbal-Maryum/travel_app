@@ -44,6 +44,12 @@ dependencies:
   geolocator: ^10.1.0
   get: ^4.6.6
   timeline_tile: ^2.0.0
+  responsive_builder: ^0.7.0
+  table_calendar: ^3.0.9
+  intl: ^0.18.0
+  flutter_svg: ^2.0.9
+  dotted_line: ^3.2.2
+
 
 
 dev_dependencies:
@@ -104,12 +110,53 @@ flutter:
      - assets/images/flight.png
      - assets/images/forward.png
      - assets/images/motel.png
-     -  assets/images/mail.png
-     -  assets/images/pass.png
-     -  assets/images/person.png
+     - assets/images/mail.png
+     - assets/images/pass.png
+     - assets/images/person.png
      - assets/images/apple.png
      - assets/images/facebook.png
-     -  assets/images/moreCircle.png
+     - assets/images/moreCircle.png
+     - assets/images/stackedpic.png
+     - assets/images/rectangle.png
+     - assets/images/leftarrow.png
+     - assets/images/rightarrow.png
+     - assets/images/group.png
+     - assets/images/route.png
+     - assets/images/wake.png
+     - assets/images/boat.png
+     - assets/images/car.png
+     - assets/images/dive.png
+     - assets/images/scenry.png
+     - assets/images/china.png
+     - assets/images/uk.png
+     - assets/images/p1.png
+     - assets/images/p2.png
+     - assets/images/p3.png
+     - assets/images/p4.png
+     - assets/images/p5.png
+     - assets/icons/arroww.svg
+     - assets/icons/sortit.svg
+     - assets/icons/logout.svg
+     - assets/icons/face.svg
+     - assets/icons/instagram.svg
+     - assets/icons/people.svg
+     - assets/icons/pinterest.svg
+     - assets/icons/twitter.svg
+     - assets/icons/homei.svg
+     - assets/icons/charti.svg
+     - assets/icons/guidei.svg
+     - assets/icons/walleti.svg
+     - assets/icons/sortout.svg
+     - assets/icons/chamber.svg
+     - assets/icons/go.svg
+     - assets/icons/vector.svg
+     - assets/icons/frame.svg
+     - assets/icons/email.svg
+     - assets/icons/secure.svg
+     - assets/icons/persona.svg
+     - assets/icons/mac.svg
+     - assets/icons/negative.svg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

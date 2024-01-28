@@ -116,17 +116,24 @@ class _AttractionDetailsState extends State<AttractionDetails> {
             }, child: Text(AppStrings.button1,style:h8Light12White.copyWith(fontSize: 14,
             fontWeight: FontWeight.normal),),
               style: ButtonStyle(
-                padding: MaterialStateProperty.all(EdgeInsets.only(top: 16,bottom: 16,
-                left: 40,right: 40)),
+                padding:MaterialStateProperty.all(
+                  EdgeInsets.symmetric(
+                    vertical: MediaQuery.of(context).size.height * 0.022,
+                    horizontal: MediaQuery.of(context).size.width * 0.09,
+                  ),),
                 backgroundColor:MaterialStateProperty.all(AppColors.button1),
               ),),
-            SizedBox(width: 20,),
+            SizedBox(width: (MediaQuery.of(context).size.width * 0.03),),
             ElevatedButton(onPressed: (){
               Navigator.push(context, MaterialPageRoute(builder: (c)=>MapScreen()));
-            }, child: Text(AppStrings.button2,style:h4Bold26Black.copyWith(fontSize: 14)),
+            },
+              child: Text(AppStrings.button2,style:h4Bold26Black.copyWith(fontSize: 14)),
               style: ButtonStyle(
-                padding: MaterialStateProperty.all(EdgeInsets.only(top: 15,bottom: 15,
-                    left: 40,right: 40)),
+                padding: MaterialStateProperty.all(
+    EdgeInsets.symmetric(
+    vertical: MediaQuery.of(context).size.height * 0.022,
+    horizontal: MediaQuery.of(context).size.width * 0.099,
+    ),),
                 backgroundColor:MaterialStateProperty.all(AppColors.whitecolor),
               ),),
           ],

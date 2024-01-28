@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import '../../config/assets.dart';
 import '../../config/colors.dart';
@@ -96,26 +97,35 @@ class _MapScreenState extends State<MapScreen> {
                         color: AppColors.searchColor,
                       ),
                     ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(50),
+                      borderSide: BorderSide(
+                        color: AppColors.primaryColor,
+                        width: 0.5,
+                      ),
+                    ),
                   ),
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(left: 5, right: 5),
-                child: ElevatedButton(
-                  onPressed: () {
-                    // Navigator.push(context, MaterialPageRoute(builder: (c)=>StartScreenTwo()));
-                  },
-                  child: Image.asset(ImageAssets.sortimg),
-                  style: ButtonStyle(
-                    shape: MaterialStateProperty.all(CircleBorder()),
-                    padding: MaterialStateProperty.all(
-                      EdgeInsets.all(18),
+                  margin: EdgeInsets.only(left: (MediaQuery.of(context).size.width * 0.03),
+                      right: (MediaQuery.of(context).size.width * 0.03)),
+                  child: ElevatedButton(
+                    onPressed: () {
+
+                    },
+                    child:SvgPicture.asset(SvgAssets.sortout),
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all(CircleBorder()),
+                      padding: MaterialStateProperty.all(
+                        EdgeInsets.all(MediaQuery.of(context).size.width * 0.05), // Adjust padding as needed
+                      ),
+                      backgroundColor: MaterialStateProperty.all(
+                        AppColors.navigatorColor,
+                      ),
                     ),
-                    backgroundColor: MaterialStateProperty.all(
-                      AppColors.navigatorColor,
-                    ),
-                  ),
-                ),
+                  )
+
               ),
             ],
           ),
@@ -198,7 +208,7 @@ class _MapScreenState extends State<MapScreen> {
                                             SizedBox(width: 5,),
                                             ElevatedButton(onPressed: (){
                                             //  Navigator.push(context, MaterialPageRoute(builder: (c)=>StartScreenTwo()));
-                                            }, child: Image.asset(ImageAssets.like),
+                                            }, child: SvgPicture.asset(SvgAssets.chamber),
                                               style: ButtonStyle(
                                                 shape: MaterialStateProperty.all(CircleBorder()),
                                                 padding: MaterialStateProperty.all(EdgeInsets.all(1)),
